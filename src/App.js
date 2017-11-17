@@ -9,6 +9,7 @@ class App extends Component {
         super();
         this.state = {
             response: false,
+            // endpoint: "http://54.67.14.97:4001",
             endpoint: "http://127.0.0.1:4001",
             avaterClient: "https://i.imgur.com/DY6gND0.png",
             avaterBot: "https://i.imgur.com/HYcn9xO.png",
