@@ -49,7 +49,7 @@ class App extends Component {
             <div className="App">
               <header className="App-header">
                   <img src={logo} className="App-logo" alt="logo" />
-                  <h1 className="App-title">Andy</h1>
+                  <h1 className="App-title">No Name Bot (IMTA)</h1>
               </header>
               <p className="App-intro">
                   To get started, click on the Assistant button at the bottom of the page.
