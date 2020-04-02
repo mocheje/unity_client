@@ -20,7 +20,7 @@ class App extends Component {
     componentDidMount() {
         const { endpoint } = this.state;
         this.socket = socketIOClient(endpoint);
-        this.socket.on("message", data => this.setState({ conversation: [...this.state.conversation, {direction: 'other', time: new Date().getTime(), context: data.result.fulfillment.speech }] }));
+        this.socket.on("message", data => this.setState({ conversation: [...this.state.conversation, {direction: 'other', time: new Date().getTime(), context: data.queryResult.fulfillmentText  }] }));
     }
 
     componentDidUpdate() {
@@ -49,7 +49,7 @@ class App extends Component {
             <div className="App">
               <header className="App-header">
                   <img src={logo} className="App-logo" alt="logo" />
-                  <h1 className="App-title">Welcome Unity Assistant</h1>
+                  <h1 className="App-title">Andy</h1>
               </header>
               <p className="App-intro">
                   To get started, click on the Assistant button at the bottom of the page.
